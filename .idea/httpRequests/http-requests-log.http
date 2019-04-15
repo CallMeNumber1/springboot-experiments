@@ -1,0 +1,106 @@
+GET http://localhost:8080/api/users/a
+
+<> 2019-04-15T111713.400.json
+
+###
+
+POST http://localhost:8080/api/users
+Content-Type: application/json
+
+{
+  "name": "a",
+  "age": 17,
+  "email": "abc"
+}
+
+<> 2019-04-15T110224.400.json
+
+###
+
+POST http://localhost:8080/api/users
+Content-Type: application/json
+
+{
+  "name": "asd",
+  "age": 17,
+  "email": "abc"
+}
+
+<> 2019-04-15T110213.400.json
+
+###
+
+POST http://localhost:8080/api/users
+Content-Type: application/json
+
+{
+"id": 3,
+"username": "Meier",
+"password": "000"
+}
+
+<> 2019-04-08T091821.200.json
+
+###
+
+POST http://localhost:8080/api/users
+Content-Type: application/json
+
+{
+"id": 3
+"username": "Meier"
+"password": "000"
+}
+
+<> 2019-04-08T091716.400.json
+
+###
+
+POST http://localhost:8080/api/users
+
+{
+"id": 3
+"username": "Meier"
+"password": "000"
+}
+
+<> 2019-04-08T091617.415.json
+
+###
+
+GET http://localhost:8080/api/user
+
+<> 2019-04-08T091454.200.json
+
+###
+
+GET http://localhost:8080/api/users/3
+
+<> 2019-04-08T091430.200.json
+
+###
+
+GET http://localhost:8080/api/users/2
+
+<> 2019-04-08T091424.200.json
+
+###
+
+GET http://localhost:8080/api/user
+
+<> 2019-04-08T091411.200.json
+
+###
+
+GET http://localhost:8080/api/users
+
+<> 2019-04-08T091332.405.json
+
+###
+
+GET http://localhost:8080/api/users
+
+<> 2019-04-08T091322.405.json
+
+###
+
