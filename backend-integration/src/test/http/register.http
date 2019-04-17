@@ -1,0 +1,57 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection).
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+###
+GET http://localhost:8080/api/test
+
+###
+POST  http://localhost:8080/api/register
+Content-Type: application/json
+
+{
+  "username": "aaa",
+  "password": 123456
+}
+
+###
+POST http://localhost:8080/api/login
+Content-Type: application/json
+
+{
+  "username": "aaa",
+  "password": 123456
+}
+
+###
+POST http://localhost:8080/api/users/1/addresses
+Authorization: 0cbd869f3d6f3a178fb658e123d6e50decfaa979427109dc6695fc359f1414fd46b1fa55dfa56ae5cd2c62cdd773a9e9
+Content-Type: application/json
+
+{
+  "detail": 956,
+  "user": {
+    "id": 1
+  }
+}
+###
+GET http://localhost:8080/api/users/1/addresses
+Authorization: 0cbd869f3d6f3a178fb658e123d6e50decfaa979427109dc6695fc359f1414fd46b1fa55dfa56ae5cd2c62cdd773a9e9
+
+###
+PATCH http://localhost:8080/api/users/1/addresses/1
+Authorization: 0cbd869f3d6f3a178fb658e123d6e50decfaa979427109dc6695fc359f1414fd46b1fa55dfa56ae5cd2c62cdd773a9e9
+Content-Type: application/json
+
+{
+  "id": 1,
+  "detail": 888,
+  "comment": 221,
+  "user": {
+   "id": 1
+  }
+}
+
+###

@@ -1,6 +1,325 @@
+PATCH http://localhost:8080/api/users/1/addresses/1
+Authorization: 0cbd869f3d6f3a178fb658e123d6e50decfaa979427109dc6695fc359f1414fd46b1fa55dfa56ae5cd2c62cdd773a9e9
+Content-Type: application/json
+
+{
+  "id": 1,
+  "detail": 888,
+  "comment": 221,
+  "user": {
+   "id": 1
+  }
+}
+
+<> 2019-04-17T112057.200.json
+
+###
+
+PATCH http://localhost:8080/api/users/1/addresses/1
+Authorization: 0cbd869f3d6f3a178fb658e123d6e50decfaa979427109dc6695fc359f1414fd46b1fa55dfa56ae5cd2c62cdd773a9e9
+Content-Type: application/json
+
+{
+  "detail": 888,
+  "user": {
+   "id": 1
+  }
+  }
+
+<> 2019-04-17T111854.403.json
+
+###
+
+GET http://localhost:8080/api/users/1/addresses
+Authorization: 0cbd869f3d6f3a178fb658e123d6e50decfaa979427109dc6695fc359f1414fd46b1fa55dfa56ae5cd2c62cdd773a9e9
+
+<> 2019-04-17T111850.200.json
+
+###
+
+PATCH http://localhost:8080/api/users/1/addresses/1
+Authorization: 0cbd869f3d6f3a178fb658e123d6e50decfaa979427109dc6695fc359f1414fd46b1fa55dfa56ae5cd2c62cdd773a9e9
+Content-Type: application/json
+
+{
+  "detail": 888,
+  "user": {
+   "id": 1
+  }
+  }
+
+<> 2019-04-17T111518.403.json
+
+###
+
+PATCH http://localhost:8080/api/users/1/addresses/1
+Authorization: 0cbd869f3d6f3a178fb658e123d6e50decfaa979427109dc6695fc359f1414fd46b1fa55dfa56ae5cd2c62cdd773a9e9
+Content-Type: application/json
+
+{
+  "detail": 888,
+  "user": {
+   "id": 12
+  }
+  }
+
+<> 2019-04-17T111512.403.json
+
+###
+
+GET http://localhost:8080/api/users/1/addresses
+Authorization: 0cbd869f3d6f3a178fb658e123d6e50decfaa979427109dc6695fc359f1414fd46b1fa55dfa56ae5cd2c62cdd773a9e9
+
+<> 2019-04-17T110949.200.json
+
+###
+
+GET http://localhost:8080/api/users/1/addresses
+Authorization: 0cbd869f3d6f3a178fb658e123d6e50decfaa979427109dc6695fc359f1414fd46b1fa55dfa56ae5cd2c62cdd773a9e9
+
+<> 2019-04-17T105928.200.json
+
+###
+
+GET http://localhost:8080/api/users/1/addresses
+Authorization: 0cbd869f3d6f3a178fb658e123d6e50decfaa979427109dc6695fc359f1414fd46b1fa55dfa56ae5cd2c62cdd773a9e9
+
+<> 2019-04-17T105904.200.json
+
+###
+
+GET http://localhost:8080/api/users/1/addresses
+Authorization: 0cbd869f3d6f3a178fb658e123d6e50decfaa979427109dc6695fc359f1414fd46b1fa55dfa56ae5cd2c62cdd773a9e9
+
+<> 2019-04-17T105727.200.json
+
+###
+
+POST http://localhost:8080/api/users/1/addresses
+Authorization: 0cbd869f3d6f3a178fb658e123d6e50decfaa979427109dc6695fc359f1414fd46b1fa55dfa56ae5cd2c62cdd773a9e9
+Content-Type: application/json
+
+{
+  "detail": 956,
+  "user": {
+    "id": 1
+  }
+}
+
+<> 2019-04-17T104845.200.json
+
+###
+
+GET http://localhost:8080/api/users/1/addresses
+Authorization: 0cbd869f3d6f3a178fb658e123d6e50decfaa979427109dc6695fc359f1414fd46b1fa55dfa56ae5cd2c62cdd773a9e9
+
+<> 2019-04-17T102530.200.json
+
+###
+
+GET http://localhost:8080/api/4/addresses
+Authorization: 0cbd869f3d6f3a178fb658e123d6e50decfaa979427109dc6695fc359f1414fd46b1fa55dfa56ae5cd2c62cdd773a9e9
+
+<> 2019-04-17T102406.404.json
+
+###
+
+GET http://localhost:8080/api/1/addresses
+Authorization: 0cbd869f3d6f3a178fb658e123d6e50decfaa979427109dc6695fc359f1414fd46b1fa55dfa56ae5cd2c62cdd773a9e9
+
+<> 2019-04-17T102351.404.json
+
+###
+
+POST http://localhost:8080/api/login
+Content-Type: application/json
+
+{
+  "username": "aaa",
+  "password": 123456
+}
+
+###
+
+GET http://localhost:8080/api/1/addresses
+
+<> 2019-04-17T102112.401.json
+
+###
+
+POST http://localhost:8080/api/login
+Content-Type: application/json
+
+{
+  "username": "aaa",
+  "password": 123456
+}
+
+###
+
+GET http://localhost:8080/api/1/addresses
+
+<> 2019-04-17T102059.401.json
+
+###
+
+POST http://localhost:8080/api/login
+Content-Type: application/json
+
+{
+  "username": "aaa",
+  "password": 123456
+}
+
+###
+
+POST http://localhost:8080/api/login
+Content-Type: application/json
+
+{
+  "username": "aaa",
+  "password": 12345
+}
+
+<> 2019-04-17T101913.401.json
+
+###
+
+POST http://localhost:8080/api/register
+Content-Type: application/json
+
+{
+  "username": "aaa",
+  "password": 123456
+}
+
+<> 2019-04-17T101907.500.json
+
+###
+
+POST http://localhost:8080/api/register
+Content-Type: application/json
+
+{
+  "username": "aab",
+  "password": 123456
+}
+
+<> 2019-04-17T100120.200.json
+
+###
+
+POST http://localhost:8080/api/register
+Content-Type: application/json
+
+{
+  "username": "aaa",
+  "password": 123456
+}
+
+<> 2019-04-17T100050.500.json
+
+###
+
+POST http://localhost:8080/api/register
+Content-Type: application/json
+
+{
+  "username": "aaa",
+  "password": 123456
+}
+
+<> 2019-04-17T100039.500.json
+
+###
+
+POST http://localhost:8080/api/register
+Content-Type: application/json
+
+{
+  "username": "aaa",
+  "password": 123456
+}
+
+<> 2019-04-17T095946.200.json
+
+###
+
+POST http://localhost:8080/api/register
+Content-Type: application/json
+
+{
+  "username": "aaa",
+  "password": 123456
+}
+
+###
+
+POST http://localhost:8080/api/register
+Content-Type: application/json
+
+{
+  "username": "aaa",
+  "password": 123456
+}
+
+###
+
+POST http://localhost:8080/api/register
+Content-Type: application/json
+
+{
+  "username": "aaa",
+  "password": 123456
+}
+
+###
+
+POST http://localhost:8080/api/register
+Content-Type: application/json
+
+{
+  "username": "aaa",
+  "password": 123456
+}
+
+###
+
+POST http://localhost:8080/api/login
+Content-Type: application/json
+
+{
+  "username": "aaa",
+  "password": 12345
+}
+
+###
+
+POST http://localhost:8080/api/register
+Content-Type: application/json
+
+{
+  "username": "aaa",
+  "password": 123456
+}
+
+###
+
+GET http://localhost:8080/api/test
+
+<> 2019-04-16T043725.401.json
+
+###
+
+GET http://localhost:8080/api/test
+
+<> 2019-04-16T043238.401.json
+
+###
+
 GET http://localhost:8080/api/users/a
 
-<> 2019-04-15T111713.400.json
+<> 2019-04-16T043142.400.json
 
 ###
 
@@ -13,94 +332,135 @@ Content-Type: application/json
   "email": "abc"
 }
 
-<> 2019-04-15T110224.400.json
+<> 2019-04-16T043135.400.json
 
 ###
 
-POST http://localhost:8080/api/users
+POST http://localhost:8888/api/register
 Content-Type: application/json
 
 {
-  "name": "asd",
-  "age": 17,
-  "email": "abc"
+  "username": "aaa",
+  "password": 123456
 }
-
-<> 2019-04-15T110213.400.json
 
 ###
 
-POST http://localhost:8080/api/users
+POST http://localhost:8888/api/register
 Content-Type: application/json
 
 {
-"id": 3,
-"username": "Meier",
-"password": "000"
+  "username": "aaa",
+  "password": 123456
 }
-
-<> 2019-04-08T091821.200.json
 
 ###
 
-POST http://localhost:8080/api/users
+GET http://localhost:8888/api/test
+
+<> 2019-04-16T042722.401.json
+
+###
+
+POST http://localhost:8888/api/register
 Content-Type: application/json
 
 {
-"id": 3
-"username": "Meier"
-"password": "000"
+  "username": "aaa",
+  "password": 123456
 }
-
-<> 2019-04-08T091716.400.json
 
 ###
 
-POST http://localhost:8080/api/users
+POST http://localhost:8888/api/register
+Content-Type: application/json
 
 {
-"id": 3
-"username": "Meier"
-"password": "000"
+  "username": "aaa",
+  "password": 123456
 }
 
-<> 2019-04-08T091617.415.json
+###
+
+GET http://localhost:8888/api/test
+
+<> 2019-04-16T042613.401.json
 
 ###
 
-GET http://localhost:8080/api/user
+POST http://localhost:8888/api/register
+Content-Type: application/json
 
-<> 2019-04-08T091454.200.json
-
-###
-
-GET http://localhost:8080/api/users/3
-
-<> 2019-04-08T091430.200.json
+{
+  "username": "aaa",
+  "password": 123456
+}
 
 ###
 
-GET http://localhost:8080/api/users/2
+GET http://localhost:8888/api/test
 
-<> 2019-04-08T091424.200.json
-
-###
-
-GET http://localhost:8080/api/user
-
-<> 2019-04-08T091411.200.json
+<> 2019-04-16T042528.401.json
 
 ###
 
-GET http://localhost:8080/api/users
+GET http://localhost:8888/api/test
 
-<> 2019-04-08T091332.405.json
+<> 2019-04-16T042415.401.json
 
 ###
 
-GET http://localhost:8080/api/users
+POST http://localhost:8888/api/register
+Content-Type: application/json
 
-<> 2019-04-08T091322.405.json
+{
+  "username": "aaa",
+  "password": 123456
+}
+
+###
+
+GET http://localhost:8888/api/test
+
+<> 2019-04-16T042243.401.json
+
+###
+
+POST http://localhost:8888/api/register
+Content-Type: application/json
+
+{
+  "username": "aaa",
+  "password": 123456
+}
+
+###
+
+POST http://localhost:8080/api/register
+Content-Type: application/json
+
+{
+  "username": "aaa",
+  "password": 123456
+}
+
+###
+
+GET http://localhost:8888/api/test
+
+<> 2019-04-16T042130.401.json
+
+###
+
+GET http://localhost:8888/api/test
+
+<> 2019-04-16T042111.401.json
+
+###
+
+GET http://localhost:8888/api/test
+
+<> 2019-04-16T042031.401.json
 
 ###
 
