@@ -1,3 +1,92 @@
+GET http://localhost:8080/api/courses/1/homeworks
+token: 50c4da4a62b6d4842569c6d131a2fdd423ff34e249933a4a51603da2b5e5e4692ebee94ab5c435802516f3dc1cf642b0
+
+<> 2019-05-20T085309.200.json
+
+###
+
+GET http://localhost:8080/api/main
+token: 50c4da4a62b6d4842569c6d131a2fdd423ff34e249933a4a51603da2b5e5e4692ebee94ab5c435802516f3dc1cf642b0
+
+<> 2019-05-20T085303.200.json
+
+###
+
+POST http://localhost:8080/api/admin/courses/1/homeworks
+token: 50c4da4a62b6d4842569c6d131a2fdd423ff34e249933a4a51603da2b5e5e4692ebee94ab5c435802516f3dc1cf642b0
+Content-Type: application/json
+
+{
+ "title": "作业1",
+  "content": "复习axios",
+  "course": {
+    "id": 1
+  },
+  "deadLineTime": "2019-04-28 20:20"
+}
+
+<> 2019-05-20T085238.200.json
+
+###
+
+POST http://localhost:8080/api/admin/courses
+token: 50c4da4a62b6d4842569c6d131a2fdd423ff34e249933a4a51603da2b5e5e4692ebee94ab5c435802516f3dc1cf642b0
+Content-Type: application/json
+
+{
+ "name": "Java程序设计"
+}
+
+<> 2019-05-20T085223.200.json
+
+###
+
+GET http://localhost:8080/api/courses/1/homeworks
+token: 50c4da4a62b6d4842569c6d131a2fdd423ff34e249933a4a51603da2b5e5e4692ebee94ab5c435802516f3dc1cf642b0
+
+<> 2019-05-20T084853.200.json
+
+###
+
+GET http://localhost:8080/api/main
+token: 50c4da4a62b6d4842569c6d131a2fdd423ff34e249933a4a51603da2b5e5e4692ebee94ab5c435802516f3dc1cf642b0
+
+<> 2019-05-20T084850.200.json
+
+###
+
+POST http://localhost:8080/api/login
+Content-Type: application/json
+
+{
+  "number": "1001",
+  "password": "1001"
+}
+
+###
+
+POST http://localhost:8080/api/login
+Content-Type: application/json
+
+{
+  "number": "10011",
+  "password": "1001"
+}
+
+<> 2019-05-20T084522.401.json
+
+###
+
+POST http://localhost:8080/api/login
+Content-Type: application/json
+
+{
+  "number": "1001",
+  "password": "1001"
+}
+
+###
+
 GET http://localhost:8080/api/index
 Authorization: 1d151d2f5b19e5ae12ff55e6769c14b0f693d64382f015502dc8bcba1229986e
 
@@ -398,80 +487,6 @@ Content-Type: application/json
 GET http://localhost:8888/api/test
 
 <> 2019-04-16T042722.401.json
-
-###
-
-POST http://localhost:8888/api/register
-Content-Type: application/json
-
-{
-  "username": "aaa",
-  "password": 123456
-}
-
-###
-
-POST http://localhost:8888/api/register
-Content-Type: application/json
-
-{
-  "username": "aaa",
-  "password": 123456
-}
-
-###
-
-GET http://localhost:8888/api/test
-
-<> 2019-04-16T042613.401.json
-
-###
-
-POST http://localhost:8888/api/register
-Content-Type: application/json
-
-{
-  "username": "aaa",
-  "password": 123456
-}
-
-###
-
-GET http://localhost:8888/api/test
-
-<> 2019-04-16T042528.401.json
-
-###
-
-GET http://localhost:8888/api/test
-
-<> 2019-04-16T042415.401.json
-
-###
-
-POST http://localhost:8888/api/register
-Content-Type: application/json
-
-{
-  "username": "aaa",
-  "password": 123456
-}
-
-###
-
-GET http://localhost:8888/api/test
-
-<> 2019-04-16T042243.401.json
-
-###
-
-POST http://localhost:8888/api/register
-Content-Type: application/json
-
-{
-  "username": "aaa",
-  "password": 123456
-}
 
 ###
 

@@ -1,15 +1,25 @@
 package com.example.experiment11integration;
 
+import com.example.experiment11integration.repository.CustomizedRepository;
+import com.example.experiment11integration.repository.impl.CustomizedRespoistoryImpl;
 import com.fasterxml.jackson.datatype.hibernate5.Hibernate5Module;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-@SpringBootApplication
-public class Experiment11IntegrationApplication {
+import javax.annotation.PostConstruct;
+import java.util.TimeZone;
 
+@SpringBootApplication
+@EnableJpaRepositories(repositoryBaseClass = CustomizedRespoistoryImpl. class)
+public class Experiment11IntegrationApplication {
+    @PostConstruct
+    void started() {
+        TimeZone.setDefault(TimeZone.getTimeZone("Asia/Shanghai"));
+    }
     public static void main(String[] args) {
         SpringApplication.run(Experiment11IntegrationApplication.class, args);
     }

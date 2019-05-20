@@ -1,0 +1,14 @@
+{
+  "homeworks": [
+    {
+      "id": 1,
+      "title": "作业1",
+      "content": "复习axios",
+      "course": {
+        "id": 1
+      },
+      "deadLineTime": "2019-04-28 20:20",
+      "insertTime": "2019-05-20T20:52:38"
+    }
+  ]
+}
