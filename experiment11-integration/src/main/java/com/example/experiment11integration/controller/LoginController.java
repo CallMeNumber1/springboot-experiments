@@ -49,6 +49,8 @@ public class LoginController {
                     } else {
                         role = ADMIN_ROLE;
                     }
+                    // 为了前端能识别身份而设置
+                    response.setHeader("role", role);
                 }, () -> {
                     throw new ResponseStatusException(HttpStatus.UNAUTHORIZED, "用户名或密码错误");
                 });
